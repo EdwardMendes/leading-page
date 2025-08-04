@@ -1,0 +1,174 @@
+/* Estilização do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fundo claro para o corpo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo e dar espaçamento */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Links na horizontal */
+    justify-content: center; /* Centraliza os links */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os links */
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave na cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de Banner */
+.banner-section {
+    background-color: #e0f7fa; /* Cor de fundo diferenciada */
+    color: #00796b;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid #b2ebf2; /* Borda inferior sutil */
+}
+
+.banner-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.banner-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; /* Justifica o texto para melhor leitura */
+}
+
+/* Seção de Produtos */
+.products-section {
+    padding: 40px 0;
+    background-color: #fff; /* Fundo branco para a seção de produtos */
+}
+
+.products-section h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 30px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens na grade */
+}
+
+.product-item {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições ao passar o mouse */
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product-item .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e67e22; /* Cor de destaque para o preço */
+}
+
+/* Rodapé */
+footer {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    text-align: center; /* Texto centralizado */
+    padding: 1.5rem 0;
+    margin-top: 40px; /* Espaço acima do rodapé */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Links da navegação em coluna */
+        align-items: center; /* Centraliza os itens da navegação */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Ajusta espaçamento vertical para links em coluna */
+    }
+
+    .banner-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .banner-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-section h2 {
+        font-size: 1.8rem;
+    }
+}s
